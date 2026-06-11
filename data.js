@@ -3,49 +3,49 @@ const diplomaData = {
   groups: [
     {
       id: 1,
-      name: "Group 1",
+      name: "The Innovators",
       theme: "Debug Masters",
-      members: ["Boy 1", "Boy 2", "Girl 1", "Girl 2"],
-      scores: { quiz: 38, lab: 34, explanation: 23 },
+      members: ["Mohammed Almalke", "Abdulraham Almuhareb", "Nouf Alenzi", "Afnan Alshalahi"],
+      scores: { quiz: 7, lab: 0, explanation:0 },
       achievements: ["Clean Code Badge", "3-Week Quiz Streak"]
     },
     {
       id: 2,
-      name: "Group 2",
+      name: "Legends",
       theme: "Model Builders",
-      members: ["Boy 1", "Boy 2", "Girl 1", "Girl 2"],
-      scores: { quiz: 35, lab: 33, explanation: 24 },
+      members: ["Yasser Altayari, "Yahya Mahrashi", "Waim Alatawi", "Waad Alatawi"],
+      scores: { quiz: 9, lab: 0, explanation:  },
       achievements: ["Best Explanation", "Resource Helper"]
     },
     {
       id: 3,
-      name: "Group 3",
+      name: "Lama",
       theme: "Data Explorers",
-      members: ["Boy 1", "Boy 2", "Girl 1", "Girl 2"],
-      scores: { quiz: 32, lab: 31, explanation: 20 },
+      members: ["Lujain Alrushoud ", "Atheer Almajnoni", "Mohammed Albalawi", "Abdulrahman Alqurashi"],
+      scores: { quiz: 10, lab: 31, explanation: 20 },
       achievements: ["Rising Team"]
     },
     {
       id: 4,
-      name: "Group 4",
+      name: "The Geeks",
       theme: "Python Thinkers",
-      members: ["Boy 1", "Boy 2", "Girl 1", "Girl 2"],
-      scores: { quiz: 30, lab: 35, explanation: 22 },
+      members: ["Retaj Albogami", "Yazeed Alhifzi", "Ghady Aldabash", "Omar Alanazi"],
+      scores: { quiz: 8, lab: 35, explanation: 22 },
       achievements: ["Mini Lab Star", "Debug Hero"]
     },
     {
       id: 5,
-      name: "Group 5",
+      name: "Engs",
       theme: "AI Innovators",
-      members: ["Boy 1", "Boy 2", "Girl 1", "Girl 2"],
-      scores: { quiz: 28, lab: 29, explanation: 21 },
+      members: ["Osama Alhasson", "Jawaher Alyami", "Hussam Almozaini", "Layan Alshedokhi"],
+      scores: { quiz: 10, lab: 29, explanation: 21 },
       achievements: ["Creative Thinkers"]
     },
     {
       id: 6,
-      name: "Group 6",
+      name: "The mean team",
       theme: "Logic Learners",
-      members: ["Boy 1", "Boy 2", "Girl 1", "Girl 2"],
+      members: ["Leen Alaslani", "Nawal Alkhilifah", "Salman Alsheheri", "Saleh Almahmood"],
       scores: { quiz: 34, lab: 28, explanation: 19 },
       achievements: ["Teamwork Badge"]
     }
