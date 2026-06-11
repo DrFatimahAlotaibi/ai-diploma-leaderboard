@@ -46,7 +46,7 @@ const diplomaData = {
       name: "The mean team",
       theme: "Logic Learners",
       members: ["Leen Alaslani", "Nawal Alkhilifah", "Salman Alsheheri", "Saleh Almahmood"],
-      scores: { quiz: 34, lab: 28, explanation: 19 },
+      scores: { quiz: 10, lab: 28, explanation: 19 },
       achievements: ["Teamwork Badge"]
     }
   ],
