@@ -13,7 +13,7 @@ const diplomaData = {
       id: 2,
       name: "Legends",
       theme: "Model Builders",
-      members: ["Yasser Altayari, "Yahya Mahrashi", "Waim Alatawi", "Waad Alatawi"],
+      members: ["Yasser Altayari, "Yahya Mahjrashi", "Waim Alatawi", "Waad Alatawi"],
       scores: { quiz: 9, lab: 0, explanation:  },
       achievements: ["Best Explanation", "Resource Helper"]
     },
