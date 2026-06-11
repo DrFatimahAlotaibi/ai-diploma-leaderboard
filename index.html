@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Diploma Leaderboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav">
+      <div class="brand">
+        <span class="brand-icon">AI</span>
+        <span>AI Diploma</span>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#leaderboard">Leaderboard</a>
+        <a href="#learning-week">Learning Week</a>
+        <a href="#resources">Resources</a>
+        <a href="#explanations">Explanations</a>
+        <a href="#groups">Groups</a>
+        <a href="#announcements">Announcements</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Weekly learning game</p>
+      <h1>AI Diploma Leaderboard</h1>
+      <p class="hero-text">
+        Track weekly quiz points, mini lab points, and concept + code explanation points.
+        Celebrate resources, explanations, achievements, and class progress.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#leaderboard">View Leaderboard</a>
+        <a class="btn secondary" href="#resources">View Resource Wall</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section stats-section" aria-label="Class summary">
+      <div class="stat-card">
+        <span id="totalGroups">6</span>
+        <p>Groups</p>
+      </div>
+      <div class="stat-card">
+        <span id="totalStudents">24</span>
+        <p>Students</p>
+      </div>
+      <div class="stat-card">
+        <span id="currentWeek">Week 1</span>
+        <p>Current Learning Week</p>
+      </div>
+      <div class="stat-card">
+        <span id="topGroup">—</span>
+        <p>Current Top Group</p>
+      </div>
+    </section>
+
+    <section class="section" id="leaderboard">
+      <div class="section-heading">
+        <p class="eyebrow">Official ranking</p>
+        <h2>🏆 Leaderboard</h2>
+        <p>Only these categories count toward the ranking: weekly quiz, mini lab, and concept + code explanation.</p>
+      </div>
+      <div class="leaderboard-wrapper">
+        <table class="leaderboard-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Group</th>
+              <th>Weekly Quiz</th>
+              <th>Mini Lab</th>
+              <th>Explanation</th>
+              <th>Total</th>
+              <th>Badge</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboardBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section split" id="learning-week">
+      <div class="section-heading compact">
+        <p class="eyebrow">Weekly roadmap</p>
+        <h2>🗺️ Learning Week</h2>
+        <p>Use this section to remind students what to review, practice, and explain.</p>
+      </div>
+      <div class="learning-card" id="learningWeekCard"></div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="section-heading">
+        <p class="eyebrow">Shared class library</p>
+        <h2>📚 Resource Wall</h2>
+        <p>Groups add useful resources for learning. This section is not part of the leaderboard score.</p>
+      </div>
+      <div class="card-grid" id="resourceGrid"></div>
+    </section>
+
+    <section class="section" id="explanations">
+      <div class="section-heading">
+        <p class="eyebrow">Clear thinking</p>
+        <h2>🎤 Best Explanation Gallery</h2>
+        <p>Short, simple explanations selected from students or groups.</p>
+      </div>
+      <div class="card-grid" id="explanationGrid"></div>
+    </section>
+
+    <section class="section word-section" id="word">
+      <div class="word-card" id="wordCard"></div>
+    </section>
+
+    <section class="section" id="groups">
+      <div class="section-heading">
+        <p class="eyebrow">Team identity</p>
+        <h2>👥 Group Cards & Achievements</h2>
+        <p>Each group has 4 members: 2 boys and 2 girls. Replace placeholders with real student names.</p>
+      </div>
+      <div class="group-grid" id="groupGrid"></div>
+    </section>
+
+    <section class="section" id="announcements">
+      <div class="section-heading">
+        <p class="eyebrow">Class updates</p>
+        <h2>📢 Announcements</h2>
+        <p>Use this area for reminders, upcoming labs, and explanation rules.</p>
+      </div>
+      <div class="announcement-list" id="announcementList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for AI Diploma students · Update scores in <strong>data.js</strong></p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
