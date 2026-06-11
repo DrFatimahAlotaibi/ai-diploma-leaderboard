@@ -14,7 +14,7 @@ const diplomaData = {
       name: "Legends",
       theme: "Model Builders",
       members: ["Yasser Altayari", "Yahya Majrashi", "Waim Alatawi", "Waad Alatawi"],
-      scores: { quiz: 9, lab: 0, explanation:  },
+      scores: { quiz: 9, lab: 0, explanation: 0 },
       achievements: ["Best Explanation", "Resource Helper"]
     },
     {
