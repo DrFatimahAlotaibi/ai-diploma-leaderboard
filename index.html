@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Diploma Learning Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="Home">
+        <img class="brand-logo" src="tuwaiq-logo.png" alt="Tuwaiq Academy logo" />
+        <span>
+          <strong>Tuwaiq Academy</strong>
+          <small>AI Diploma Learning Hub</small>
+        </span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#leaderboard">Leaderboard</a>
+        <a href="#resources">Resources</a>
+        <a href="#explanations">Explanations</a>
+        <a href="#word">AI Word</a>
+        <a href="#experts">AI Experts</a>
+        <a href="#groups">Groups</a>
+        <a href="#announcements">Announcements</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Current Course</p>
+      <h1>Mathematics, Linear Algebra and Probability for AI and Machine Learning</h1>
+      <p class="hero-text">Year: <strong>2026</strong> · By: <strong>Dr. Fatimah Alotaibi</strong> and <strong>Ms. Banan Alnemeri</strong></p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#leaderboard">View Leaderboard</a>
+        <a class="btn secondary" id="heroResourceBtn" target="_blank" rel="noopener">Submit Resource</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section stats-section" aria-label="Course statistics">
+      <article class="stat-card"><span id="statGroups">6</span><p>Groups</p></article>
+      <article class="stat-card"><span id="statStudents">24</span><p>Students</p></article>
+      <article class="stat-card"><span id="statWeek">Week 1</span><p>Current Week</p></article>
+      <article class="stat-card"><span id="statTop">—</span><p>Top Group</p></article>
+    </section>
+
+    <section class="section" id="leaderboard">
+      <div class="section-heading">
+        <p class="eyebrow">Official Score</p>
+        <h2>🏆 Leaderboard</h2>
+        <p>Ranking is based only on weekly quiz, mini lab, and concept/code explanation.</p>
+      </div>
+      <div class="leaderboard-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Group</th>
+              <th>Quiz</th>
+              <th>Mini Lab</th>
+              <th>Explanation</th>
+              <th>Total</th>
+              <th>Badge</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboardBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="section-heading">
+        <p class="eyebrow">Shared Library</p>
+        <h2>📚 Resource Wall</h2>
+        <p>Students share useful learning links. This is not part of the leaderboard score.</p>
+      </div>
+      <div class="action-panel">
+        <a class="btn primary" id="resourceSubmitBtn" target="_blank" rel="noopener">+ Submit a Resource</a>
+        <a class="btn secondary" id="resourceVoteBtn" target="_blank" rel="noopener">Vote for Best Resource</a>
+      </div>
+
+      <div class="highlight-card" id="bestResourceCard"></div>
+
+      <div class="resource-block">
+        <h3>Current Course Resources</h3>
+        <div class="card-grid" id="courseResourceGrid"></div>
+      </div>
+
+      <div class="resource-block">
+        <h3>General AI Resources</h3>
+        <div class="card-grid" id="generalResourceGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="explanations">
+      <div class="section-heading">
+        <p class="eyebrow">Student Voice</p>
+        <h2>🎤 Best Explanation Gallery</h2>
+        <p>Clear short explanations of concepts from students.</p>
+      </div>
+      <div class="action-panel">
+        <a class="btn primary" id="explanationSubmitBtn" target="_blank" rel="noopener">+ Submit an Explanation</a>
+      </div>
+      <div class="card-grid" id="explanationGrid"></div>
+    </section>
+
+    <section class="section word-section" id="word">
+      <div class="section-heading compact">
+        <p class="eyebrow">Vocabulary</p>
+        <h2>🧠 AI Word of the Week</h2>
+      </div>
+      <div class="action-panel">
+        <a class="btn primary" id="aiWordSubmitBtn" target="_blank" rel="noopener">+ Suggest AI Word</a>
+      </div>
+      <article class="word-card" id="wordCard"></article>
+    </section>
+
+    <section class="section" id="experts">
+      <div class="section-heading">
+        <p class="eyebrow">People in AI</p>
+        <h2>🌟 AI Experts</h2>
+        <p>Students can introduce researchers, AI engineers, entrepreneurs, or leaders worth knowing in AI.</p>
+      </div>
+      <div class="action-panel">
+        <a class="btn primary" id="aiExpertSubmitBtn" target="_blank" rel="noopener">+ Suggest AI Expert</a>
+      </div>
+      <div class="card-grid" id="expertGrid"></div>
+    </section>
+
+    <section class="section" id="groups">
+      <div class="section-heading">
+        <p class="eyebrow">Teams</p>
+        <h2>👥 Group Cards & Achievements</h2>
+        <p>Each group has 4 members. Achievements and badges are shown under each group.</p>
+      </div>
+      <div class="group-grid" id="groupGrid"></div>
+    </section>
+
+    <section class="section" id="announcements">
+      <div class="section-heading">
+        <p class="eyebrow">Updates</p>
+        <h2>📢 Announcements</h2>
+      </div>
+      <div class="announcement-list" id="announcementList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>This is an unofficial class learning website created for student motivation and course activities.</p>
+    <p>Version: v3-tuwaiq-inspired</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
