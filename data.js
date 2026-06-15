@@ -163,17 +163,14 @@ For imbalanced data problems, we should not depend only on accuracy. Instead, we
   ],
 
   announcements: [
-    {
-      title: "Next class reminder",
-      text: "Bring your laptop and make sure Google Colab is working before class."
-    },
-    {
-      title: "Explanation rule",
-      text: "One student from each group may be randomly selected to explain part of the code."
-    },
-    {
-      title: "Resource Wall",
-      text: "Each group can submit helpful learning resources for the course or general AI."
-    }
+  {
+    title: "Group Quiz",
+    text: "Thursday, June 18: There will be a graded group quiz covering Chapter 2."
+  },
+  {
+    title: "Assessment Plan",
+    text: "The assessment plan is now available on Google Drive."
+  }
+]
   ]
 };
