@@ -1,5 +1,5 @@
 const diplomaData = {
-  currentWeek: "Week 1",
+  currentWeek: "Week 3",
   courseTitle: "Mathematics, Linear Algebra and Probability for AI and Machine Learning",
   year: "2026",
   instructors: "Dr. Fatimah Alotaibi and Ms. Banan Alnemeri",
