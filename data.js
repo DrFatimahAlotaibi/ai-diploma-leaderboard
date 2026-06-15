@@ -101,14 +101,28 @@ const diplomaData = {
 
   explanations: [
     {
-      title: "Conditional Probability",
-      group: "Model Builders",
-      text: "Conditional probability means we calculate the probability after we already know some information. The sample space becomes smaller because we only look at cases that satisfy the condition."
+      title: "Different between Poisson method ",
+      group: "LAMA",
+      text: `- PMF (Probability Mass Function):
+Example: What is the probability of receiving exactly 3 emails in one hour?
+Use .pmf
+Exactly → PMF
+
+- CDF (Cumulative Distribution Function):
+Example: What is the probability of receiving 3 or fewer emails in one hour?
+Use .cdf
+Fewer / at most → CDF
+
+- SF (Survival Function):
+Example: What is the probability of receiving more than 3 emails in one hour?
+Use .sf
+More than → SF
+  `
     },
     {
-      title: "Why Matrix Shape Matters",
-      group: "Python Thinkers",
-      text: "Matrix multiplication works only when the inside dimensions match. This means the columns of the first matrix must equal the rows of the second matrix."
+      title: "Data Imbalance",
+      group: "Legends",
+      text: "Data Imbalance happens when one class has much more data than another class Data imbalance is important in AI because the model may learn the majority class too well and ignore the minority class. This can give us high accuracy, but the model may actually perform badly.For imbalance data problems we should not depend only on accuracy. Instead we should use evaluation metrics such as Recall ,Precision and F1-Score because they show how well the model performs on the important class, not just the overall accuracy"
     }
   ],
 
