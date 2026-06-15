@@ -54,29 +54,29 @@ const diplomaData = {
     resourceVoteForm: "https://docs.google.com/forms/d/1x28DXxuLa7af6hLy2KBZ9rE9Xmu1VHoVWKsqCE9SwCo/viewform",
     explanationForm: "https://docs.google.com/forms/d/1sK5-I1jKSi8ZGJdX5eoj8BA9N4LIpWr4iJ_qtAXrEyY/viewform",
     aiWordForm: "https://docs.google.com/forms/d/1rdMkkX5KhaCJEdXt7n5ZOldLUpYhbEa9uaUsMR1dh0Q/viewform",
-    aiExpertForm: "#"
+    aiExpertForm: "https://forms.gle/LXLPwDjtrnieBghF8"
   },
 
   bestResource: {
     title: "Conditional Probability Visualizer",
-    group: "Debug Masters",
+    group: "The Innovators",
     note: "Selected as the most helpful beginner-friendly resource."
   },
 
   currentCourseResources: [
     {
       title: "Conditional Probability Visualizer",
-      group: "Debug Masters",
+      group: "The Innovators",
       link: "#"
     },
     {
       title: "Simple Dice Simulation",
-      group: "Model Builders",
+      group: "The Legends",
       link: "#"
     },
     {
       title: "Probability in 5 Minutes",
-      group: "Data Explorers",
+      group: "LAMA",
       link: "#"
     }
   ],
@@ -84,19 +84,19 @@ const diplomaData = {
   generalAIResources: [
     {
       title: "Stanford CS229: Machine Learning Full Course taught by Andrew Ng | Autumn 2018",
-      group: "The mean team",
+      group: "The mean Team",
       link: "https://youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&si=JwUuRWsjzOISK5a1"
     },
     {
       title: "Tinker With a Neural Network",
       group: "Engs",
-      link: "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.10677&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false"
-    },
+      link: "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.10677&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&collectStats=false&problem=classification&initZero=false&hideText=false"
+    }
   ],
 
   explanations: [
     {
-      title: "Different between Poisson method ",
+      title: "Difference Between Poisson Methods",
       group: "LAMA",
       text: `- PMF (Probability Mass Function):
 Example: What is the probability of receiving exactly 3 emails in one hour?
@@ -111,51 +111,57 @@ Fewer / at most → CDF
 - SF (Survival Function):
 Example: What is the probability of receiving more than 3 emails in one hour?
 Use .sf
-More than → SF
-  `
+More than → SF`
     },
     {
       title: "Data Imbalance",
-      group: "Legends",
-      text: "Data Imbalance happens when one class has much more data than another class Data imbalance is important in AI because the model may learn the majority class too well and ignore the minority class. This can give us high accuracy, but the model may actually perform badly.For imbalance data problems we should not depend only on accuracy. Instead we should use evaluation metrics such as Recall ,Precision and F1-Score because they show how well the model performs on the important class, not just the overall accuracy"
+      group: "The Legends",
+      text: `Data imbalance happens when one class has much more data than another class.
+
+Data imbalance is important in AI because the model may learn the majority class too well and ignore the minority class.
+
+This can give us high accuracy, but the model may actually perform badly.
+
+For imbalanced data problems, we should not depend only on accuracy. Instead, we should use evaluation metrics such as recall, precision, and F1-score because they show how well the model performs on the important class, not just the overall accuracy.`
     }
   ],
 
- aiWords: [
-  {
-    word: "علام",
-    group: "The Innovators",
-    arabic: "أول نموذج ذكاء اصطناعي سعودي متقدم طُوّر بالكامل بواسطة فريق سعودي تحت مظلة هيئة الذكاء الاصطناعي سدايا.",
-    meaning: "ALLaM is an advanced Saudi AI model designed to understand Arabic language, culture, and regional dialects.",
-
-  },
-  {
-    word: " Token",
-    group: "The Geeks",
-    meaning: "Token is a basic unit of data like a word, part of a word, or punctuation mark. Language models process tokens to understand and generate text.",
-  },
-
-]
+  aiWords: [
+    {
+      word: "علام",
+      group: "The Innovators",
+      arabic: "أول نموذج ذكاء اصطناعي سعودي متقدم طُوّر بالكامل بواسطة فريق سعودي تحت مظلة هيئة الذكاء الاصطناعي سدايا.",
+      meaning: "ALLaM is an advanced Saudi AI model designed to understand Arabic language, culture, and regional dialects."
+    },
+    {
+      word: "Token",
+      group: "The Geeks",
+      arabic: "وحدة صغيرة من النص، قد تكون كلمة أو جزءًا من كلمة أو علامة ترقيم.",
+      meaning: "A token is a basic unit of text, such as a word, part of a word, or punctuation mark. Language models process tokens to understand and generate text."
+    }
+  ],
 
   aiExperts: [
     {
       name: "Geoffrey Hinton",
-      role: "AI researcher",
+      role: "AI Researcher",
       knownFor: "Deep learning and neural networks",
-      group: "Data Explorers"
-
+      group: "LAMA",
+      link: "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
     },
     {
       name: "Fei-Fei Li",
-      role: "AI researcher and educator",
+      role: "AI Researcher and Educator",
       knownFor: "Computer vision and ImageNet",
-      group: "AI Innovators"
+      group: "Engs",
+      link: "https://en.wikipedia.org/wiki/Fei-Fei_Li"
     },
     {
       name: "Andrew Ng",
-      role: "AI educator and entrepreneur",
+      role: "AI Educator and Entrepreneur",
       knownFor: "Making machine learning education accessible",
-      group: "Model Builders"
+      group: "The Legends",
+      link: "https://en.wikipedia.org/wiki/Andrew_Ng"
     }
   ],
 
