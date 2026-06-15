@@ -121,11 +121,21 @@ More than → SF
     }
   ],
 
-  wordOfWeek: {
+ aiWords: [
+  {
     word: "علام",
-    arabic: "اول نموذج ذكاء اصطناعي سعودي متقدم طور بالكامل بواسطة فريق سعودي تحت مضلة هيئة الذكاء الاصطناعي سدايا ",
-    meaning: "The first advanced Saudi artificial intelligence model, developed entirely locally, is specifically designed to understand the cultural and linguistic context of the region and to speak in different Arabic dialects.",
+    group: "The Innovators",
+    arabic: "أول نموذج ذكاء اصطناعي سعودي متقدم طُوّر بالكامل بواسطة فريق سعودي تحت مظلة هيئة الذكاء الاصطناعي سدايا.",
+    meaning: "ALLaM is an advanced Saudi AI model designed to understand Arabic language, culture, and regional dialects.",
+
   },
+  {
+    word: " Token",
+    group: "The Geeks",
+    meaning: "Token is a basic unit of data like a word, part of a word, or punctuation mark. Language models process tokens to understand and generate text.",
+  },
+
+]
 
   aiExperts: [
     {
@@ -133,6 +143,7 @@ More than → SF
       role: "AI researcher",
       knownFor: "Deep learning and neural networks",
       group: "Data Explorers"
+
     },
     {
       name: "Fei-Fei Li",
