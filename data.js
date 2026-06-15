@@ -144,23 +144,23 @@ For imbalanced data problems, we should not depend only on accuracy. Instead, we
   aiExperts: [
     {
       name: "Geoffrey Hinton",
-      role: "AI Researcher",
+      
       knownFor: "Deep learning and neural networks",
-      group: "LAMA",
+      group: "none",
       link: "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
     },
     {
       name: "Fei-Fei Li",
-      role: "AI Researcher and Educator",
+
       knownFor: "Computer vision and ImageNet",
-      group: "Engs",
+      group: "none",
       link: "https://en.wikipedia.org/wiki/Fei-Fei_Li"
     },
     {
       name: "Andrew Ng",
-      role: "AI Educator and Entrepreneur",
+
       knownFor: "Making machine learning education accessible",
-      group: "The Legends",
+      group: "none",
       link: "https://en.wikipedia.org/wiki/Andrew_Ng"
     }
   ],
