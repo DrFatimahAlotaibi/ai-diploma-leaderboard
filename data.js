@@ -172,5 +172,5 @@ For imbalanced data problems, we should not depend only on accuracy. Instead, we
     text: "The assessment plan is now available on Google Drive."
   }
 ]
-  ]
+  
 };
