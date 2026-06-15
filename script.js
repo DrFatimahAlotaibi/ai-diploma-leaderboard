@@ -14,6 +14,7 @@ function badgeForScore(score) {
 
 function setLinks() {
   const links = diplomaData.submissionLinks || {};
+
   const linkMap = {
     heroResourceBtn: links.resourceForm,
     resourceSubmitBtn: links.resourceForm,
@@ -26,10 +27,17 @@ function setLinks() {
   Object.entries(linkMap).forEach(([id, url]) => {
     const el = $(id);
     if (!el) return;
+
     el.href = url && url !== "#" ? url : "#";
+
     if (!url || url === "#") {
       el.classList.add("disabled");
       el.title = "Add the Google Form link in data.js";
+    } else {
+      el.classList.remove("disabled");
+      el.title = "";
+      el.target = "_blank";
+      el.rel = "noopener";
     }
   });
 }
@@ -43,9 +51,12 @@ function renderStats(sortedGroups) {
 
 function renderLeaderboard() {
   const sorted = [...diplomaData.groups].sort((a, b) => totalScore(b) - totalScore(a));
+
   renderStats(sorted);
+
   $("leaderboardBody").innerHTML = sorted.map((group, index) => {
     const total = totalScore(group);
+
     return `
       <tr>
         <td class="rank">${index === 0 ? "🥇" : index === 1 ? "🥈" : index === 2 ? "🥉" : index + 1}</td>
@@ -64,11 +75,15 @@ function renderGroups() {
   $("groupGrid").innerHTML = diplomaData.groups.map(group => `
     <article class="group-card">
       <h3>${group.name}</h3>
+
       <ul class="member-list">
         ${group.members.map(member => `<li>${member}</li>`).join("")}
       </ul>
+
       <div class="achievement-list">
-        ${(group.badges || group.achievements || []).map(item => `<span class="achievement">${item}</span>`).join("")}
+        ${(group.badges || group.achievements || []).map(item => `
+          <span class="achievement">${item}</span>
+        `).join("")}
       </div>
     </article>
   `).join("");
@@ -79,19 +94,23 @@ function resourceCard(resource) {
     <article class="resource-card simple-resource">
       <h3>${resource.title}</h3>
       <p class="group-label">${resource.group}</p>
-      <a class="resource-link" href="${resource.link}" target="_blank" rel="noopener">Open resource →</a>
+      <a class="resource-link" href="${resource.link}" target="_blank" rel="noopener">
+        Open resource →
+      </a>
     </article>
   `;
 }
 
 function renderResources() {
   const best = diplomaData.bestResource;
+
   $("bestResourceCard").innerHTML = `
     <p class="eyebrow">Best Resource</p>
     <h3>🌟 ${best.title}</h3>
     <p><strong>${best.group}</strong></p>
     <p>${best.note}</p>
   `;
+
   $("courseResourceGrid").innerHTML = diplomaData.currentCourseResources.map(resourceCard).join("");
   $("generalResourceGrid").innerHTML = diplomaData.generalAIResources.map(resourceCard).join("");
 }
@@ -106,27 +125,49 @@ function renderExplanations() {
   `).join("");
 }
 
-function renderWord() {
-  const word = diplomaData.wordOfWeek;
-  $("wordCard").innerHTML = `
-    <div class="word-main">
-      <div class="word-label">${word.word}</div>
-      <div>
-        <p class="card-text"><strong>Meaning:</strong> ${word.meaning}</p>
-        <p class="arabic">${word.arabic}</p>
-        <p class="card-text"><strong>Example:</strong> ${word.example}</p>
+function renderAIWords() {
+  const container = $("wordCard");
+  if (!container || !diplomaData.aiWords) return;
+
+  container.innerHTML = diplomaData.aiWords.map(item => `
+    <article class="word-card">
+      <div class="meta">
+        <span>${item.group}</span>
       </div>
-    </div>
-  `;
+
+      <div class="word-main">
+        <div class="word-label">${item.word}</div>
+
+        <div>
+          ${item.arabic ? `<p class="arabic">${item.arabic}</p>` : ""}
+          ${item.meaning ? `<p class="card-text"><strong>Meaning:</strong> ${item.meaning}</p>` : ""}
+          ${item.example ? `<p class="card-text"><strong>Example:</strong> ${item.example}</p>` : ""}
+        </div>
+      </div>
+    </article>
+  `).join("");
 }
 
 function renderExperts() {
-  $("expertGrid").innerHTML = diplomaData.aiExperts.map(expert => `
+  const container = $("expertGrid");
+  if (!container || !diplomaData.aiExperts) return;
+
+  container.innerHTML = diplomaData.aiExperts.map(expert => `
     <article class="expert-card">
       <h3>${expert.name}</h3>
-      <p class="group-label">${expert.role}</p>
+
+      <div class="meta">
+        <span>${expert.role}</span>
+        <span>Suggested by ${expert.group}</span>
+      </div>
+
       <p class="card-text"><strong>Known for:</strong> ${expert.knownFor}</p>
-      <span class="achievement">Suggested by ${expert.group}</span>
+
+      ${expert.link ? `
+        <a class="resource-link" href="${expert.link}" target="_blank" rel="noopener">
+          Learn more →
+        </a>
+      ` : ""}
     </article>
   `).join("");
 }
@@ -143,7 +184,12 @@ function renderAnnouncements() {
 function initMenu() {
   const menuBtn = $("menuBtn");
   const navLinks = $("navLinks");
-  menuBtn.addEventListener("click", () => navLinks.classList.toggle("open"));
+
+  if (!menuBtn || !navLinks) return;
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
 }
 
 function init() {
@@ -151,7 +197,7 @@ function init() {
   renderLeaderboard();
   renderResources();
   renderExplanations();
-  renderWord();
+  renderAIWords();
   renderExperts();
   renderGroups();
   renderAnnouncements();
