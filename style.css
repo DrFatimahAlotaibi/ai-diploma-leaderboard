@@ -121,7 +121,11 @@ tr:last-child td { border-bottom: 0; }
 .card-grid, .group-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .resource-card h3, .explanation-card h3, .group-card h3, .announcement-card h3, .expert-card h3 { margin: 0 0 10px; font-size: 1.55rem; }
 .group-label { color: var(--muted); font-weight: 900; font-size: 1.02rem; margin: 10px 0 18px; }
-.card-text { color: var(--muted); line-height: 1.65; font-size: 1.02rem; }
+.card-text {
+  color: var(--muted);
+  line-height: 1.65;
+  white-space: pre-line;
+}
 .resource-link { display: inline-flex; margin-top: 10px; font-weight: 900; color: var(--primary); }
 .resource-link:hover { color: var(--accent-dark); }
 .word-section { padding-top: 74px; }
