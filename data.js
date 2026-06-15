@@ -83,20 +83,15 @@ const diplomaData = {
 
   generalAIResources: [
     {
-      title: "Google Machine Learning Crash Course",
-      group: "AI Innovators",
-      link: "https://developers.google.com/machine-learning/crash-course"
+      title: "Stanford CS229: Machine Learning Full Course taught by Andrew Ng | Autumn 2018",
+      group: "The mean team",
+      link: "https://youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&si=JwUuRWsjzOISK5a1"
     },
     {
-      title: "Teachable Machine by Google",
-      group: "Python Thinkers",
-      link: "https://teachablemachine.withgoogle.com/"
+      title: "Tinker With a Neural Network",
+      group: "Engs",
+      link: "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.10677&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false"
     },
-    {
-      title: "Elements of AI",
-      group: "Logic Learners",
-      link: "https://www.elementsofai.com/"
-    }
   ],
 
   explanations: [
@@ -127,10 +122,9 @@ More than → SF
   ],
 
   wordOfWeek: {
-    word: "Feature",
-    arabic: "خاصية أو متغير يستخدمه النموذج للتعلم",
-    meaning: "A feature is an input value that helps the model make a prediction.",
-    example: "If we predict house price, features can be size, location, and number of rooms."
+    word: "علام",
+    arabic: "اول نموذج ذكاء اصطناعي سعودي متقدم طور بالكامل بواسطة فريق سعودي تحت مضلة هيئة الذكاء الاصطناعي سدايا ",
+    meaning: "The first advanced Saudi artificial intelligence model, developed entirely locally, is specifically designed to understand the cultural and linguistic context of the region and to speak in different Arabic dialects.",
   },
 
   aiExperts: [
