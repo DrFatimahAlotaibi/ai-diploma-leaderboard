@@ -164,8 +164,8 @@ For imbalanced data problems, we should not depend only on accuracy. Instead, we
 
   announcements: [
   {
-    title: "Group Quiz",
-    text: "Thursday, June 18: There will be a graded group quiz covering Chapter 2."
+    title: "Exam#1 Quiz",
+    text: "Monday, June 29"
   },
   {
     title: "Assessment Plan",
