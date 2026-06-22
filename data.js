@@ -23,7 +23,7 @@ const diplomaData = {
       id: 3,
       name: "LAMA",
       members: ["Lujain Alrushoud", "Atheer Almajnoni", "Mohammed Albalawi", "Abdulrahman Alqurashi"],
-      scores: { quiz: 10, lab: 20, explanation: 0 },
+      scores: { quiz: 17, lab: 20, explanation: 0 },
       badges: ["Rising Team"]
     },
     {
