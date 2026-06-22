@@ -9,14 +9,14 @@ const diplomaData = {
       id: 1,
       name: "The Innovators",
       members: ["Mohammed Almalke", "Abdulraham Almuhareb", "Nouf Alenzi", "Afnan Alshalahi"],
-      scores: { quiz: 7, lab: 20, explanation: 0 },
+      scores: { quiz: 15, lab: 20, explanation: 1 },
       badges: ["Clean Code Badge", "3-Week Quiz Streak"]
     },
     {
       id: 2,
       name: "The Legends",
       members: ["Yasser Altayari", "Yahya Majrashi", "Waim Alatawi", "Waad Alatawi"],
-      scores: { quiz: 9, lab:20, explanation: 0 },
+      scores: { quiz: 19, lab:20, explanation: 0 },
       badges: ["Best Explanation", "Resource Helper"]
     },
     {
@@ -30,21 +30,21 @@ const diplomaData = {
       id: 4,
       name: "The Geeks",
       members: ["Retaj Albogami", "Yazeed Alhifzi", "Ghady Aldabash", "Omar Alanazi"],
-      scores: { quiz: 8, lab: 20, explanation: 1 },
+      scores: { quiz: 17, lab: 20, explanation: 1 },
       badges: ["Mini Lab Star", "Debug Hero"]
     },
     {
       id: 5,
       name: "Engs",
       members: ["Osama Alhasson", "Jawaher Alyami", "Hussam Almozaini", "Layan Alshedokhi"],
-      scores: { quiz: 10, lab: 20, explanation: 0 },
+      scores: { quiz: 19, lab: 20, explanation: 1 },
       badges: ["Creative Thinkers"]
     },
     {
       id: 6,
       name: "The mean team",
       members: ["Leen Alaslani", "Nawal Alkhilifah", "Salman Alsheheri", "Saleh Almahmood"],
-      scores: { quiz: 10, lab: 20, explanation: 0 },
+      scores: { quiz: 19, lab: 20, explanation: 1 },
       badges: ["Teamwork Badge"]
     }
   ],
