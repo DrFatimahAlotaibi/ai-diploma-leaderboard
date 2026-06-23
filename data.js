@@ -63,22 +63,17 @@ const diplomaData = {
     note: "Selected as the most helpful beginner-friendly resource."
   },
 
-  currentCourseResources: [
-    {
-      title: "Conditional Probability Visualizer",
-      group: "The Innovators",
-      link: "#"
-    },
-    {
-      title: "Simple Dice Simulation",
-      group: "The Legends",
-      link: "#"
-    },
-    {
-      title: "Probability in 5 Minutes",
-      group: "LAMA",
-      link: "#"
-    }
+ currentCourseResources: [
+  {
+    title: "Sampling and Estimation",
+    group: "The mean Team — Saleh Almahmood",
+    link: "https://docs.google.com/presentation/d/1hopxfF27YRArC-G0t1tj0khxpmcUtKaE/edit?usp=sharing&ouid=110141160406572767617&rtpof=true&sd=true"
+  },
+  {
+    title: "Joint Distributions and Probabilities",
+    group: "The mean Team — Saleh Almahmood",
+    link: "https://docs.google.com/presentation/d/1vA3A0jcWZ5qHZbtKROi8I_NYyGOkwWoZ/edit?usp=drive_link&ouid=110141160406572767617&rtpof=true&sd=true"
+  },
   ],
 
  generalAIResources: [
