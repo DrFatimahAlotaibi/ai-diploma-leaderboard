@@ -102,8 +102,7 @@ const diplomaData = {
     group: "Engs — Jawaher Almalke",
     link: "https://docs.google.com/presentation/d/1PU0ypPwil_ysNJZ4UVoxGasVwxmQthqQ/edit?usp=sharing&ouid=110141160406572767617&rtpof=true&sd=true"
   }
-
-  ],
+],
 
   explanations: [
     {
