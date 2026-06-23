@@ -100,6 +100,43 @@ function resourceCard(resource) {
     </article>
   `;
 }
+function renderCourseGallery() {
+  const galleryContainer = document.getElementById("course-gallery");
+
+  if (!galleryContainer || !diplomaData.courseGallery) return;
+
+  galleryContainer.innerHTML = diplomaData.courseGallery
+    .map(
+      (item) => `
+        <article class="gallery-card">
+          <a href="${item.fullImage}" target="_blank" rel="noopener noreferrer">
+            <img
+              src="${item.image}"
+              alt="${item.title} by ${item.group}"
+              class="gallery-image"
+            />
+          </a>
+
+          <div class="gallery-content">
+            <p class="gallery-group">${item.group}</p>
+            <h3>${item.title}</h3>
+            <p class="gallery-members">${item.members.join(" • ")}</p>
+            <p class="gallery-caption">${item.caption}</p>
+
+            <a
+              class="gallery-link"
+              href="${item.fullImage}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Photo →
+            </a>
+          </div>
+        </article>
+      `
+    )
+    .join("");
+}
 
 function renderResources() {
   const best = diplomaData.bestResource;
