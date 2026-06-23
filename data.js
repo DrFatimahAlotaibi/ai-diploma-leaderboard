@@ -94,7 +94,7 @@ const diplomaData = {
   },
   {
     title: "GitHub Essentials",
-    group: "Engs — Jawaher Almalke",
+    group: "Engs,
     link: "https://docs.google.com/presentation/d/1PU0ypPwil_ysNJZ4UVoxGasVwxmQthqQ/edit?usp=sharing&ouid=110141160406572767617&rtpof=true&sd=true"
   }
 ],
@@ -166,6 +166,22 @@ For imbalanced data problems, we should not depend only on accuracy. Instead, we
       link: "https://en.wikipedia.org/wiki/Andrew_Ng"
     }
   ],
+
+  courseGallery: [
+  {
+    title: "GitHub Essentials Presentation",
+    group: "The Engs",
+    members: [
+      "Osama Alhasson",
+      "Jawaher Alyami",
+      "Hussam Almozaini",
+      "Layan Alshedokhi"
+    ],
+    image: "https://drive.google.com/thumbnail?id=15unWQrSRvsYaqxVhJ3JTx2XOFVlgkBdN&sz=w1600",
+    fullImage: "https://drive.google.com/file/d/15unWQrSRvsYaqxVhJ3JTx2XOFVlgkBdN/view?usp=drive_link",
+    caption: "Enjoyed the GitHub Essentials presentation by The Engs group: Osama Alhasson, Jawaher Alyami, Hussam Almozaini, and Layan Alshedokhi. Great work on such an important skill. Looking forward to seeing the projects of the 2026 Tuwaiq AI Diploma students come alive on GitHub!"
+  }
+],
 
   announcements: [
   {
