@@ -81,17 +81,28 @@ const diplomaData = {
     }
   ],
 
-  generalAIResources: [
-    {
-      title: "Stanford CS229: Machine Learning Full Course taught by Andrew Ng | Autumn 2018",
-      group: "The mean Team",
-      link: "https://youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&si=JwUuRWsjzOISK5a1"
-    },
-    {
-      title: "Tinker With a Neural Network",
-      group: "Engs",
-      link: "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.10677&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&collectStats=false&problem=classification&initZero=false&hideText=false"
-    }
+ generalAIResources: [
+  {
+    title: "Stanford CS229: Machine Learning Full Course taught by Andrew Ng | Autumn 2018",
+    group: "The mean Team",
+    link: "https://youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&si=JwUuRWsjzOISK5a1"
+  },
+  {
+    title: "Tinker With a Neural Network",
+    group: "Engs",
+    link: "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.10677&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&collectStats=false&problem=classification&initZero=false&hideText=false"
+  },
+  {
+    title: "MLGuard: Detecting Data Leakage and Invalid Evaluation in scikit-learn Workflows",
+    group: "The Innovators — Mohammed Almalke",
+    link: "https://docs.google.com/presentation/d/1ToweiIae1MM_QhqMEwIZW_R-2MwmjFr2/edit?usp=sharing&ouid=110141160406572767617&rtpof=true&sd=true"
+  },
+  {
+    title: "GitHub Essentials",
+    group: "Engs — Jawaher Almalke",
+    link: "https://docs.google.com/presentation/d/1PU0ypPwil_ysNJZ4UVoxGasVwxmQthqQ/edit?usp=sharing&ouid=110141160406572767617&rtpof=true&sd=true"
+  }
+],
   ],
 
   explanations: [
@@ -164,8 +175,8 @@ For imbalanced data problems, we should not depend only on accuracy. Instead, we
 
   announcements: [
   {
-    title: "Exam#1 Quiz",
-    text: "Monday, June 29"
+    title: "Exam#1",
+    text: "Tuesday, June 30"
   },
   {
     title: "Assessment Plan",
