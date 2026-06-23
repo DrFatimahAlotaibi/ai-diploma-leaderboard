@@ -239,6 +239,7 @@ function init() {
   renderGroups();
   renderAnnouncements();
   initMenu();
+  renderCourseGallery();
 }
 
 init();
